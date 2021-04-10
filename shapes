@@ -1,0 +1,23 @@
+from shapes import Paper, Triangle, Rectangle, Oval, random
+
+paper = Paper()      #create an instance of a Paper object.
+
+x=random.randint(2,10)
+
+for i in range(x):
+    rect = Rectangle()       #instance of a Rectangle object.
+    rect.randomize()     #Randomly generates width, height, position and colour for a shape.
+    rect.draw()          #draw the rectangle onto the paper.
+
+x=random.randint(2,10)
+for i in range(x):
+    tr=Triangle()
+    tr.randomize()
+    tr.draw()
+
+x=random.randint(2,10)
+for i in range(x):
+    ov=Oval()
+    ov.randomize()
+    ov.draw()
+paper.display() 
